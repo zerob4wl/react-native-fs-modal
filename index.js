@@ -1,7 +1,6 @@
 'use strict';
 
 var React = require('react-native');
-var deviceScreen = require('Dimensions').get('window');
 var Tween = require('react-native-tween-animation');
 
 var {
@@ -9,8 +8,11 @@ var {
     View,
     Component,
     TouchableWithoutFeedback,
+    Dimensions
     } = React;
 import utils from './utils';
+
+var deviceScreen = Dimensions.get('window');
 
 class Modal extends Component {
 
